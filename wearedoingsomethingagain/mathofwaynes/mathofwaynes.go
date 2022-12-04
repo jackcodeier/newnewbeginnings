@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"operator_incognito"
 	"time"
 )
 
@@ -20,7 +21,7 @@ func Login() {
 		fmt.Scanln()
 		if login == "brucewayne" {
 			fmt.Printf("Welcome Master Bruce, what do you wish to do today?\n")
-			operator_incognito()
+			operator_incognito.Operator_1()
 			return
 		}
 		if 4-checker == 0 {
@@ -31,31 +32,13 @@ func Login() {
 	}
 }
 
-func operator_incognito() {
-	var operation int
-	fmt.Println("1. List all even numbers until 100.")
-	fmt.Println("2. List all odd numbers until 100.")
-	fmt.Println("3. Take square of the entered number.")
-	fmt.Scanf("%d", &operation)
-	fmt.Scanln()
-	if operation == 1 {
-		begin_even()
-	}
-	if operation == 2 {
-		begin_odd()
-	}
-	if operation == 3 {
-		begin_square()
-	}
-}
-
 func begin_even() {
 	for i := 0; i <= 100; i++ {
 		if i%2 == 0 {
 			fmt.Printf("%d is an even number\n", i)
 		}
 	}
-	operator_incognito()
+	operator_incognito.Operator_1()
 }
 
 func begin_odd() {
@@ -64,7 +47,7 @@ func begin_odd() {
 			fmt.Printf("%d is an odd number\n", i)
 		}
 	}
-	operator_incognito()
+	operator_incognito.Operator_1()
 }
 func begin_square() {
 	var x int
@@ -78,7 +61,7 @@ func begin_square() {
 		return
 	}
 	fmt.Printf("Square of %d = %d\n", x, x*x)
-	operator_incognito()
+	operator_incognito.Operator_1()
 }
 func batcave() {
 	fmt.Println("Welcome to batcave Master Bruce.")
