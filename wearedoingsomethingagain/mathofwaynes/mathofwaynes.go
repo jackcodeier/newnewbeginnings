@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"operator_incognito"
+	t "methods"
 	"time"
 )
 
@@ -21,7 +21,7 @@ func Login() {
 		fmt.Scanln()
 		if login == "brucewayne" {
 			fmt.Printf("Welcome Master Bruce, what do you wish to do today?\n")
-			operator_incognito.Operator_1()
+			t.Operator_incognito()
 			return
 		}
 		if 4-checker == 0 {
@@ -38,7 +38,7 @@ func begin_even() {
 			fmt.Printf("%d is an even number\n", i)
 		}
 	}
-	operator_incognito.Operator_1()
+	t.Operator_incognito()
 }
 
 func begin_odd() {
@@ -47,7 +47,7 @@ func begin_odd() {
 			fmt.Printf("%d is an odd number\n", i)
 		}
 	}
-	operator_incognito.Operator_1()
+	t.Operator_incognito()
 }
 func begin_square() {
 	var x int
@@ -61,7 +61,7 @@ func begin_square() {
 		return
 	}
 	fmt.Printf("Square of %d = %d\n", x, x*x)
-	operator_incognito.Operator_1()
+	t.Operator_incognito()
 }
 func batcave() {
 	fmt.Println("Welcome to batcave Master Bruce.")
@@ -90,5 +90,4 @@ func archives() {
 		archives()
 	}
 	fmt.Println("Unrecognized input please try again.")
-	archives()
 }
