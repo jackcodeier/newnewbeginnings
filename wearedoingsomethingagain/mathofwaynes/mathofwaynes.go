@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
-	t "methods"
 	"time"
+
+	t "github.com/jackcodeier/newnewbeginnings/tree/main/wearedoingsomethingagain/mathofwaynes/methods"
 )
 
 func main() {
